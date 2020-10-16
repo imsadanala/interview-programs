@@ -1,6 +1,3 @@
-/**
- * 
- */
 package com.interview.programs;
 
 import java.util.Scanner;
