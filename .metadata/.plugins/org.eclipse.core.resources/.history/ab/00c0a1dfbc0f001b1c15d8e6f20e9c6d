@@ -1,0 +1,27 @@
+package com.interview.programs;
+
+import java.util.Scanner;
+
+/**
+ * 
+ * @author Suresh Sadanala
+ *
+ */
+@SuppressWarnings("resource")
+public class Pallindrom {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		int orgNum = scanner.nextInt();
+		int remainder, revNum = 0;
+		while (orgNum != 0) {
+			remainder = orgNum % 10;
+			revNum = remainder * 10 + remainder;
+			orgNum = orgNum / 10;
+		}
+		System.err.println(revNum == orgNum ? String.format(" %d is pallindrom ", orgNum)
+				: String.format(" %d is not pallindrom ", orgNum));
+
+	}
+
+}

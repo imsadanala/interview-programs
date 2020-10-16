@@ -1,0 +1,14 @@
+package com.interview.programs;
+
+/**
+ * 
+ * @author Suresh Sadanala
+ *
+ */
+public class Pallindrom {
+
+	public static void main(String[] args) {
+		
+	}
+
+}
