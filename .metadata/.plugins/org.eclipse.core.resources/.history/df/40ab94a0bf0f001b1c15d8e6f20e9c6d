@@ -1,0 +1,28 @@
+/**
+ * 
+ */
+package com.interview.programs;
+
+/**
+ * @author Suresh Sadanala
+ *
+ */
+public class SwapingNumbers {
+	
+	public static void main(String[] args) {
+		swap1(100, 300);
+	}
+	
+	/**
+	 * using 3rd variable
+	 * @param x
+	 * @param y
+	 */
+	private static void swap1(int x, int y) {
+		int temp;
+		temp = x;
+		y = temp;
+		x = y;
+		System.err.println(String.format("Approach1 X %d, Y %d", x, y));
+	}
+}

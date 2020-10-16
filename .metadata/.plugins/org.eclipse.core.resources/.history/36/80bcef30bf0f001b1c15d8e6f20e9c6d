@@ -1,0 +1,16 @@
+/**
+ * 
+ */
+package com.interview.programs;
+
+/**
+ * @author Suresh Sadanala
+ *
+ */
+public class SwapingNumbers {
+	
+	public static void main(String[] args) {
+
+	}
+
+}
