@@ -18,14 +18,16 @@ public class SearchElement {
 	 * @param searchEle
 	 */
 	private static void search(int[] array, int searchEle) {
+		boolean isFound = false;
 		int i;
 		for (i = 0; i < array.length; i++) {
 			if (searchEle == array[i]) {
+				isFound = true;
 				System.err.println(String.format("%d is found in the array ", searchEle));
 				break;
 			}
 		}
-		if(i == array.length) {
+		if (Boolean.FALSE.equals(isFound)) {
 			System.err.println(String.format("%d is not found in the array ", searchEle));
 		}
 
