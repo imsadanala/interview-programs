@@ -1,4 +1,4 @@
-package com.interview.programs;
+package com.interview.programs.leetcode;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -8,10 +8,10 @@ import java.util.Stack;
  * @author Suresh Sadanala
  *
  */
-public class LeetCodeDay1 {
+public class Day1 {
 
 	public static void main(String[] args) {
-		System.out.println(new LeetCodeDay1().isValid("()[]{}"));
+		System.out.println(new Day1().isValid("()[]{}"));
 	}
 
 	/**
