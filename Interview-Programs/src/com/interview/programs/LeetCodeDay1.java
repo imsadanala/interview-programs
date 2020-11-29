@@ -8,10 +8,10 @@ import java.util.Stack;
  * @author Suresh Sadanala
  *
  */
-public class LeetCodeSamples {
+public class LeetCodeDay1 {
 
 	public static void main(String[] args) {
-		System.out.println(new LeetCodeSamples().isValid("()[]{}"));
+		System.out.println(new LeetCodeDay1().isValid("()[]{}"));
 	}
 
 	/**
@@ -160,4 +160,5 @@ public class LeetCodeSamples {
 		}
 		return parenthesesStack.isEmpty();
 	}
+
 }
