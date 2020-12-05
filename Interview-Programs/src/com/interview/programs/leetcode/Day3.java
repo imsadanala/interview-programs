@@ -13,7 +13,8 @@ public class Day3 {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		System.out.println(new Day3().strStr("a", "a"));
+		int[] arr = new int[] { 1, 3, 5, 6 };
+		System.out.println(new Day3().searchInsert(arr, 7));
 	}
 
 	/**
@@ -31,4 +32,26 @@ public class Day3 {
 		return haystack.indexOf(needle) >= 0 ? haystack.indexOf(needle) : -1;
 	}
 
+	/**
+	 * RefLink: https://leetcode.com/problems/search-insert-position/
+	 * 
+	 * @param nums
+	 * @param target
+	 * @return
+	 */
+	public int searchInsert(int[] nums, int target) {
+		int newIndex = 0;
+		for (int i = 0; i < nums.length; i++) {
+			if (target < nums[i]) {
+				return newIndex = i;
+			} else if (nums[i] == target) {
+				return newIndex = i;
+			} else if (target > nums[i] && i == nums.length - 1) {
+				newIndex = i;
+				newIndex++;
+				return newIndex;
+			}
+		}
+		return newIndex;
+	}
 }
