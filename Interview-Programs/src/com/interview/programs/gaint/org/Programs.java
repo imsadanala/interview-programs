@@ -12,8 +12,10 @@ public class Programs {
 	 *  Examples:
 	 *  live, love  -> one edit as "o" can replace by "i" or vice versa
 	 *  lve, live   -> one edit, insert in "i" in "lve" or remove "i" from "live"
+	 *  loves, love -> one edit, insert s in "love" or remove s in "love"
 	 *  live, leave -> more than one edit
-	 *  lie, lines  -> more than one edit   
+	 *  lie, lines  -> more than one edit  
+	 *  live, loves -> more than one edit
 	 *  Ref: https://youtu.be/5FOWy_2tzck
 	 *
 	 */
