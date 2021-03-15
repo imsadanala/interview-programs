@@ -23,32 +23,35 @@ public class Programs {
 			return false;
 		}
 
-		String shorterStr = a.length() < b.length() ? a : b;
-		String longerStr = a.length() > b.length() ? a : b;
+		String shorterStr = a;
+		String longerStr = b;
+		if (Math.abs(a.length() - b.length()) != 0) {
+			shorterStr = a.length() < b.length() ? a : b;
+			longerStr = a.length() > b.length() ? a : b;
+		}
 
 		int sIndex = 0;
 		int lIndex = 0;
 		int mismatchCount = Math.abs(a.length() - b.length());
 
-		while (sIndex < shorterStr.length() || lIndex < longerStr.length()) {
+		while (sIndex < shorterStr.length() && lIndex < longerStr.length()) {
 			if (shorterStr.charAt(sIndex) != longerStr.charAt(lIndex)) {
 				mismatchCount++;
 			}
 			if (mismatchCount > 1) {
 				return false;
 			}
-			
-			if(shorterStr.length() == longerStr.length()) {
+
+			if (shorterStr.length() == longerStr.length()) {
 				sIndex++;
 			} else {
 				sIndex++;
 			}
-			
+
 			lIndex++;
 		}
 
 		return true;
 	}
-
 	
 }

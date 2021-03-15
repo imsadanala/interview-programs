@@ -6,7 +6,7 @@ public class Test {
 
 	public static void main(String[] args) {
 		
-		System.out.println(Programs.oneEditAway("live", "leave"));
+		System.out.println(Programs.oneEditAway("live", "levi"));
 		
 	}      
 
